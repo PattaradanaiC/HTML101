@@ -21,8 +21,22 @@
       }
       .text {
         margin: 10px; 
-        
+        }
+    .text_size{
+        font-size: 21px;
     }
+
+    .in-stock {
+        color: red;
+      }
+    
+      .divider {
+        color: black;
+      }
+    
+      .out-of-stock {
+        color: red;
+      }
     </style>
     </head>
 
@@ -30,16 +44,23 @@
         <div style="padding-left: 3em;">
             <h1>Toy Name</h1>
 
-                <div class="box">
-                    <p>Toy Picture</p>
-                </div>
+            <div class="box">
+                <p>Toy Picture</p>
+            </div>
 
-                <div class="mar">
-                    <p>Brand</p>
-                    <p>Gender</p>
-                    <p>Age</p>
-                    <p>Price</p>
+            <div class="mar">
+                <p class="text_size">Brand <br>
+                    Gender <br>
+                    Age <br>
+                    Price <br>
+                    Shipping Method: Cash on Delivery
+                </p>
+                <div class="text_size">
+                    <span class="in-stock">In stock</span>
+                    <span class="divider">/</span>
+                    <span class="out-of-stock">Out of stock</span>
                 </div>
+            </div>
 
         </div>
     </body>
