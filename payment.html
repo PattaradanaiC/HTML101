@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap"
+            rel="stylesheet">
+    <title>Payment</title>
+
+    <style>
+        body {
+            font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+            margin: 29px;
+            margin-left: 55px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 65%;
+            height: 0px;
+            border: 2px solid rgb(69, 66, 66);
+        }
+        th, tr,td {
+            border: 0.5px solid black;
+        }
+        .th_left{
+            position: relative;
+            text-align: left;
+            left: 10px;
+        }
+        .th_right{
+            position: relative;
+            text-align: right;
+            right: 10px;
+        }
+        .price_right{
+            position: relative;
+            text-align: right;
+            margin-bottom: 75px;
+            margin-right: 10px;   
+          }
+        .text_right{
+            position: relative;
+            bottom: 35px;
+            text-align: right;
+            margin-right: 10px; 
+          }
+        .toy_main{
+            margin-left: 14px;
+            margin-right: 175px;
+          }
+        .drop_text{
+            width: 4.5rem; 
+            height: 1rem; 
+            text-align: center;
+          }
+        .container {
+            display: flex;
+        }
+        .in-stock {
+            color: red;
+            font-weight: bold;
+          }
+        
+        .divider {
+            color: black;
+          }
+        
+        .out-of-stock {
+            color: red;
+            font-weight: bold;
+          }
+        .sum_medhod{
+            margin-left: 2em;
+            text-align: left;
+            font-size: 20px;
+          }
+    .select_pay{
+        font-weight: bold;
+        font-size: 21px;
+        margin-top: 35px;
+    }
+    .order_button{
+        position: relative;
+        text-align: right;
+        right: 6em;
+    }
+    </style>
+</head>
+<body>
+
+    <div>
+
+        <div><h1>Payment Methodes</h1></div>
+
+        <div class="container">
+            <table>
+                <tr>
+                    <th><div class="th_left">Items</div></th>
+                    <th><div>Quantity</div></th>
+                    <th><div class="th_right">Price (THB)</div></th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="toy_main">
+                            <span><b>Toy Name</b></span>
+                            <span>By Brand</span>
+                            <div class="container">
+                                <div style="margin-right: 50px;">Gender</div>
+                                <div>Age</div>
+                            </div>
+                            <div class="text_size">
+                                <span class="in-stock">In stock</span>
+                                <span class="divider">/</span>
+                                <span class="out-of-stock">Out of stock</span>
+                            </div>                            
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text_right">1</div>
+                    </td>
+                    <td><div class="price_right">100.00</div></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="toy_main">
+                            <span><b>Toy Name</b></span>
+                            <span>By Brand</span>
+                            <div class="container">
+                                <div style="margin-right: 50px;">Gender</div>
+                                <div>Age</div>
+                            </div>
+                            <div class="text_size">
+                                <span class="in-stock">In stock</span>
+                                <span class="divider">/</span>
+                                <span class="out-of-stock">Out of stock</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text_right">1</div>
+                    </td>
+                    <td><div class="price_right">100.00</div></td>
+                </tr>
+            </table>
+
+            <div class="sum_medhod">
+
+                <div><b>Order Summary</b></div>
+
+                <div style="margin-left: 0.9em;">
+                    <div>
+                        <span>Items(2):</span>
+                        <span style="color: rgb(186, 6, 6);">200.00</span>
+                        <span>THB</span>
+                    </div>
+                    <div>
+                        <span>Shipping Fee:</span>
+                        <span style="color: rgb(186, 6, 6);">150.00</span>
+                        <span>THB</span>
+                    </div>
+
+                    <hr width="103%" size="2" color="#009933" align="center" style="margin-left: -0.5em;">
+
+                    <div><b><span>Order total:</span>
+                        <span style="color: rgb(186, 6, 6);">200.00</span>
+                        <span>THB</span></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>Shipping Medhod: Kerry Express</div>
+
+        <div class="select_pay">
+            <div>Select payment methods</div>
+
+            <div style="margin-top: 10px;">
+                <input type="radio" id="html">
+                <label for="html">Credit or Debit Cards</label>
+            </div>
+            <div>
+                <input type="radio" id="html">
+                <label for="html">Paypal</label>
+            </div>
+            <div>
+                <input type="radio" id="html">
+                <label for="html">Line Pay</label>
+            </div>
+        </div>
+
+        <div class="order_button" style=" padding-top: 1.5em;">
+            <button type="button" style="width: 17em; height: 2em; background-color: white; border: solid 2px rgb(0, 0, 0); font-size: 25px;">
+                <b>Place your order</b>
+            </button>
+        </div>
+
+    </div><!-- กล่องใหญ่ -->
+
+</body>
+</html>
