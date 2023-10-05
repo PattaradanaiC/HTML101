@@ -78,10 +78,16 @@
             top: 12px;
           }
           .sum_medhod{
-            position: relative;
-            top: 12px;
             font-weight: bold;
+            margin-left: 32.2em;
+            margin-top: 10px;
+            text-align: right;
+            font-size: 26px;
           }
+          .deliver_button{
+            position: relative;
+            text-align: right;
+        }
     </style>
     </head>
     <body>
@@ -160,17 +166,31 @@
                 </table>
             </div>
 
-            <div class="container">
+            <div class="container" style="height: 4em;">
                 <div class="s_medhod">
                     <div>Shipping Medhod: Kerry Express</div>
-                    <div style="position: relative; bottom: 8px;">Shipping fee: 150.00 THB</div>
+                    <div style="position: relative; bottom: 8px;">Shipping fee:
+                        150.00 THB</div>
                 </div>
 
                 <div class="sum_medhod">
-                    <span>Subtotal (2 items):</span>
-                    <span style="color: red;">200.00</span>
-                    <span>THB</span>
+                    <div>
+                        <span>Subtotal (2 items):</span>
+                        <span style="color: rgb(186, 6, 6);">200.00</span>
+                        <span>THB</span>
+                    </div>
+                    <div>
+                        <span>Shipping Fee:</span>
+                        <span style="color: rgb(186, 6, 6);;">150.00</span>
+                        <span>THB</span>
+                    </div>
                 </div>
+            </div>
+
+            <div class="deliver_button" style=" padding-top: 4.5em;">
+                <button type="button" style="width: 18em; height: 2em; background-color: white; border: solid 2px rgb(0, 0, 0); font-size: 20px;">
+                    <b>Process to checkout</b>
+                </button>
             </div>
 
         </div> <!-- กล่องใหญ่ -->
