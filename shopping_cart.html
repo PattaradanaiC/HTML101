@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap"
+            rel="stylesheet">
+        <title>Shopping Cart</title>
+        <style>
+        body {
+            font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+            margin: 29px;
+            margin-left: 55px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            height: 0px;
+            border: 2px solid rgb(69, 66, 66);
+        }
+
+        th, tr,td {
+            border: 0.5px solid black;
+        }
+        .th_left{
+            position: relative;
+            text-align: left;
+            left: 10px;
+        }
+        .th_right{
+            position: relative;
+            text-align: right;
+            right: 10px;
+        }
+        .container {
+            display: flex;
+        }
+
+        .in-stock {
+            color: red;
+            font-weight: bold;
+          }
+        
+          .divider {
+            color: black;
+          }
+        
+          .out-of-stock {
+            color: red;
+            font-weight: bold;
+          }
+          .del_color{
+            color: blue;
+          }
+          .price_right{
+            position: relative;
+            text-align: right;
+            margin-bottom: 75px;
+            margin-right: 10px;   
+          }
+          .drop_top{
+            position: relative;
+            bottom: 35px;
+            text-align: center;
+          }
+          .drop_text{
+            width: 4.5rem; 
+            height: 1rem; 
+            text-align: center;
+          }
+          .toy_main{
+            margin-left: 14px;
+            margin-right: 355px;
+          }
+          .s_medhod{
+            position: relative;
+            top: 12px;
+          }
+          .sum_medhod{
+            position: relative;
+            top: 12px;
+            font-weight: bold;
+          }
+    </style>
+    </head>
+    <body>
+
+        <div>
+
+            <div><h1>Shopping Cart</h1></div>
+
+            <div>
+                <table>
+                    <tr>
+                        <th><div class="th_left">Items</div></th>
+                        <th><div>Quantity</div></th>
+                        <th><div class="th_right">Price (THB)</div></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="toy_main">
+                                <span><b>Toy Name</b></span>
+                                <span>By Brand</span>
+                                <div class="container">
+                                    <div style="margin-right: 50px;">Gender</div>
+                                    <div>Age</div>
+                                </div>
+                                <div class="text_size">
+                                    <span class="in-stock">In stock</span>
+                                    <span class="divider">/</span>
+                                    <span class="out-of-stock">Out of stock</span>
+                                </div>
+                                <div class="del_color">Delete</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="drop_top">
+                                <select class="drop_text">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td><div class="price_right">100.00</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="toy_main">
+                                <span><b>Toy Name</b></span>
+                                <span>By Brand</span>
+                                <div class="container">
+                                    <div style="margin-right: 50px;">Gender</div>
+                                    <div>Age</div>
+                                </div>
+                                <div class="text_size">
+                                    <span class="in-stock">In stock</span>
+                                    <span class="divider">/</span>
+                                    <span class="out-of-stock">Out of stock</span>
+                                </div>
+                                <div class="del_color">Delete</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="drop_top">
+                                <select class="drop_text">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td><div class="price_right">100.00</div></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="container">
+                <div class="s_medhod">
+                    <div>Shipping Medhod: Kerry Express</div>
+                    <div style="position: relative; bottom: 8px;">Shipping fee: 150.00 THB</div>
+                </div>
+
+                <div class="sum_medhod">
+                    <span>Subtotal (2 items):</span>
+                    <span style="color: red;">200.00</span>
+                    <span>THB</span>
+                </div>
+            </div>
+
+        </div> <!-- กล่องใหญ่ -->
+
+    </body>
+</html>
