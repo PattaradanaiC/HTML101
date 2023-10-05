@@ -3,8 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap" rel="stylesheet">
         <title>Product Detail</title>
         <style>
+            body {
+                font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+            }
       .box {
         border: solid 2px rgb(0, 0, 0);
         width: 13%;
@@ -16,14 +20,14 @@
       }
       .mar {
         position: absolute;
-        top: 60px;
+        top: 70px;
         left: 18%;
       }
       .text {
         margin: 10px; 
         }
     .text_size{
-        font-size: 21px;
+        font-size: 18px;
     }
 
     .in-stock {
@@ -59,7 +63,28 @@
                     <span class="in-stock">In stock</span>
                     <span class="divider">/</span>
                     <span class="out-of-stock">Out of stock</span>
+                </div> <br>
+
+                <div class="text_size">
+                    <label for="quantity">Quantity </label>
+                    <select name="quantity" id="quantity"  style="width: 4.5rem; height: 2rem">
+                        <option></option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
                 </div>
+
+                <div style=" padding-top: 1em;">
+                    <button type="button" style="width: 12.5em; height: 1.9em; background-color: white; font-size: 20px;"><b>Add to cart</b></button>
+                </div>
+
             </div>
 
         </div>
